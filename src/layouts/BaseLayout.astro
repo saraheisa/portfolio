@@ -26,10 +26,13 @@ const { title, description } = Astro.props;
 			<Footer />
 		</div>
 
+
 		<script>
 			// Add “loaded” class once the document has completely loaded.
 			addEventListener('load', () => document.documentElement.classList.add('loaded'));
 		</script>
+
+		<script defer src="/_vercel/insights/script.js"></script>
 
 		<style>
 			:root {
