@@ -1,16 +1,20 @@
 ---
+import Icon from './Icon.astro';
+
 interface Props {
 	title: string;
 	tagline?: string;
 	align?: 'start' | 'center';
+	link?: string;
 }
 
-const { align = 'center', tagline, title } = Astro.props;
+const { align = 'center', tagline, title, link } = Astro.props;
 ---
 
 <header class:list={['hero stack gap-4', align]}>
 	<div class="stack gap-2">
-		<h1 class="title">{title}</h1>
+		{!link && <h1 class="title">{title}</h1>}
+		{ link && <a class="link" href={link} target="_blank"><h1 class="title">{title} <Icon icon="link" size="1em" /></h1></a>}
 		{tagline && <p class="tagline">{tagline}</p>}
 	</div>
 	<slot />
@@ -31,6 +35,10 @@ const { align = 'center', tagline, title } = Astro.props;
 	.title {
 		font-size: var(--text-3xl);
 		color: var(--gray-0);
+	}
+
+	.link{
+		text-decoration: none;
 	}
 
 	@media (min-width: 50em) {

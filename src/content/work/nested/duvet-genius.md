@@ -1,5 +1,6 @@
 ---
 title: Duvet Genius
+link: https://chrome.google.com/webstore/detail/30-seconds-of-islam/jfibdcnnoggmjgjionikmoljdackpkma
 publishDate: 2020-03-04 00:00:00
 img: /assets/stock-3.jpg
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting

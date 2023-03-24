@@ -1,5 +1,6 @@
 ---
 title: Bloom Box
+link: https://chrome.google.com/webstore/detail/30-seconds-of-islam/jfibdcnnoggmjgjionikmoljdackpkma
 publishDate: 2019-12-01 00:00:00
 img: /assets/stock-2.jpg
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
